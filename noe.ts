@@ -7,7 +7,7 @@ function onPeutPhotographierTousLesAnimaux(animaux: Animaux): void {
   console.log("Ils sont tous photogénique :-)");
 }
 
-// 2) class et fonction pour la deuxieme actions
+// 2) class et fonction pour la deuxieme actions suite dans la partie 7 avec l'heritage
 class Chats {
   name: string;
 
@@ -22,7 +22,7 @@ class Chats {
 
 const chatChartreux = new Chats("Chartreux");
 
-// 3) class et fonction pour la troisieme actions
+// 3) class et fonction pour la troisieme actions suite dans la partie 7 avec l'heritage
 class Chiens {
   name: string;
 
@@ -37,7 +37,7 @@ class Chiens {
 
 const chienMoonMoon = new Chiens("Moon Moon");
 
-// 4) class et fonction pour la quatrieme actions
+// 4) class et fonction pour la quatrieme actions suite dans la partie 7 avec l'heritage
 class Oiseaux {
   name: string;
 
