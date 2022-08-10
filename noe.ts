@@ -1,23 +1,11 @@
 // 1) interface et fonction pour la premiere action
-interface Animaux {
-  chats: string;
-  chiens: string;
-  oiseaux: string;
-  poissons: string;
-  insectes: string;
+export interface Animaux {
+  name: string;
 }
 
 function onPeutPhotographierTousLesAnimaux(animaux: Animaux): void {
   console.log("Ils sont tous photogénique :-)");
 }
-
-const animaux = {
-  chats: "chats",
-  chiens: "chiens",
-  oiseaux: "oiseaux",
-  poissons: "poissons",
-  insectes: "insectes",
-};
 
 // 2) class et fonction pour la deuxieme actions
 class Chats {
@@ -130,8 +118,8 @@ class OiseauxNoir extends Oiseaux {
 
 const oiseauMerle = new OiseauxNoir("Merle", "noir");
 
-// 1) En lançant node noe.js cela affiche : Ils sont tous photogénique :-)
-onPeutPhotographierTousLesAnimaux(animaux);
+// 1) En lançant node noe.js en mettant n'importe quel animal dans la fonction cela affiche : Ils sont tous photogénique :-)
+onPeutPhotographierTousLesAnimaux(chienMoonMoon);
 
 // 2) En lançant node noe.js cela affiche deux fois : Tous les chats font miauouuuu
 chatEuropeen.tousLesChatsPeuventMiauler();

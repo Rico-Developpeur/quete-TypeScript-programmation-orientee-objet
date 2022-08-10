@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -13,16 +14,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+exports.__esModule = true;
 function onPeutPhotographierTousLesAnimaux(animaux) {
     console.log("Ils sont tous photogénique :-)");
 }
-var animaux = {
-    chats: "chats",
-    chiens: "chiens",
-    oiseaux: "oiseaux",
-    poissons: "poissons",
-    insectes: "insectes"
-};
 // 2) class et fonction pour la deuxieme actions
 var Chats = /** @class */ (function () {
     function Chats(name) {
@@ -113,7 +108,7 @@ var OiseauxNoir = /** @class */ (function (_super) {
 }(Oiseaux));
 var oiseauMerle = new OiseauxNoir("Merle", "noir");
 // 1) En lançant node noe.js cela affiche : Ils sont tous photogénique :-)
-onPeutPhotographierTousLesAnimaux(animaux);
+onPeutPhotographierTousLesAnimaux(chienMoonMoon);
 // 2) En lançant node noe.js cela affiche deux fois : Tous les chats font miauouuuu
 chatEuropeen.tousLesChatsPeuventMiauler();
 chatChartreux.tousLesChatsPeuventMiauler();
