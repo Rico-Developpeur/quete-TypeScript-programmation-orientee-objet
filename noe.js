@@ -18,7 +18,15 @@ exports.__esModule = true;
 function onPeutPhotographierTousLesAnimaux(animaux) {
     console.log("Ils sont tous photogénique :-)");
 }
-// 2) class et fonction pour la deuxieme actions
+// creation d'une class Larves
+var Larves = /** @class */ (function () {
+    function Larves(name) {
+        this.name = name;
+    }
+    return Larves;
+}());
+var larveAsticot = new Larves("Asticot");
+// 2) creation d'une class Chats et fonction pour la deuxieme actions suite dans la partie 7 avec l'heritage
 var Chats = /** @class */ (function () {
     function Chats(name) {
         this.name = name;
@@ -29,7 +37,7 @@ var Chats = /** @class */ (function () {
     return Chats;
 }());
 var chatChartreux = new Chats("Chartreux");
-// 3) class et fonction pour la troisieme actions
+// 3) creation d'une class Chiens et fonction pour la troisieme actions suite dans la partie 7 avec l'heritage
 var Chiens = /** @class */ (function () {
     function Chiens(name) {
         this.name = name;
@@ -40,7 +48,7 @@ var Chiens = /** @class */ (function () {
     return Chiens;
 }());
 var chienMoonMoon = new Chiens("Moon Moon");
-// 4) class et fonction pour la quatrieme actions
+// 4) creation d'une class Oiseaux et fonction pour la quatrieme actions suite dans la partie 7 avec l'heritage
 var Oiseaux = /** @class */ (function () {
     function Oiseaux(name) {
         this.name = name;
@@ -51,7 +59,7 @@ var Oiseaux = /** @class */ (function () {
     return Oiseaux;
 }());
 var oiseauMesange = new Oiseaux("Mesange");
-// 5) class et fonction pour la cinqieme actions
+// 5) creation d'une class Poissons et fonction pour la cinqieme actions
 var Poissons = /** @class */ (function () {
     function Poissons(name) {
         this.name = name;
@@ -107,8 +115,8 @@ var OiseauxNoir = /** @class */ (function (_super) {
     return OiseauxNoir;
 }(Oiseaux));
 var oiseauMerle = new OiseauxNoir("Merle", "noir");
-// 1) En lançant node noe.js cela affiche : Ils sont tous photogénique :-)
-onPeutPhotographierTousLesAnimaux(chienMoonMoon);
+// 1) En lançant node noe.js en mettant n'importe quel animal dans la fonction cela affiche : Ils sont tous photogénique :-)
+onPeutPhotographierTousLesAnimaux(larveAsticot);
 // 2) En lançant node noe.js cela affiche deux fois : Tous les chats font miauouuuu
 chatEuropeen.tousLesChatsPeuventMiauler();
 chatChartreux.tousLesChatsPeuventMiauler();

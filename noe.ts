@@ -130,7 +130,7 @@ class OiseauxNoir extends Oiseaux {
 const oiseauMerle = new OiseauxNoir("Merle", "noir");
 
 // 1) En lançant node noe.js en mettant n'importe quel animal dans la fonction cela affiche : Ils sont tous photogénique :-)
-onPeutPhotographierTousLesAnimaux();
+onPeutPhotographierTousLesAnimaux(larveAsticot);
 
 // 2) En lançant node noe.js cela affiche deux fois : Tous les chats font miauouuuu
 chatEuropeen.tousLesChatsPeuventMiauler();
