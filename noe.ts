@@ -7,7 +7,18 @@ function onPeutPhotographierTousLesAnimaux(animaux: Animaux): void {
   console.log("Ils sont tous photogénique :-)");
 }
 
-// 2) class et fonction pour la deuxieme actions suite dans la partie 7 avec l'heritage
+// creation d'une class Larves
+class Larves {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+const larveAsticot = new Larves("Asticot");
+
+// 2) creation d'une class Chats et fonction pour la deuxieme actions suite dans la partie 7 avec l'heritage
 class Chats {
   name: string;
 
@@ -22,7 +33,7 @@ class Chats {
 
 const chatChartreux = new Chats("Chartreux");
 
-// 3) class et fonction pour la troisieme actions suite dans la partie 7 avec l'heritage
+// 3) creation d'une class Chiens et fonction pour la troisieme actions suite dans la partie 7 avec l'heritage
 class Chiens {
   name: string;
 
@@ -37,7 +48,7 @@ class Chiens {
 
 const chienMoonMoon = new Chiens("Moon Moon");
 
-// 4) class et fonction pour la quatrieme actions suite dans la partie 7 avec l'heritage
+// 4) creation d'une class Oiseaux et fonction pour la quatrieme actions suite dans la partie 7 avec l'heritage
 class Oiseaux {
   name: string;
 
@@ -52,7 +63,7 @@ class Oiseaux {
 
 const oiseauMesange = new Oiseaux("Mesange");
 
-// 5) class et fonction pour la cinqieme actions
+// 5) creation d'une class Poissons et fonction pour la cinqieme actions
 class Poissons {
   name: string;
 
@@ -119,7 +130,7 @@ class OiseauxNoir extends Oiseaux {
 const oiseauMerle = new OiseauxNoir("Merle", "noir");
 
 // 1) En lançant node noe.js en mettant n'importe quel animal dans la fonction cela affiche : Ils sont tous photogénique :-)
-onPeutPhotographierTousLesAnimaux(chienMoonMoon);
+onPeutPhotographierTousLesAnimaux();
 
 // 2) En lançant node noe.js cela affiche deux fois : Tous les chats font miauouuuu
 chatEuropeen.tousLesChatsPeuventMiauler();
